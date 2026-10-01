@@ -1,0 +1,159 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8; /* Azul grisáceo muy claro */
+    color: #2c3e50; /* Azul oscuro para el texto */
+    line-height: 1.6;
+}
+
+/* 1. SECCIÓN SUPERIOR: DATOS, INFORMACIÓN Y RESUMEN */
+.barra-top {
+    background-color: #1e293b; /* Azul noche muy oscuro */
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-top {
+    flex: 1;
+    background-color: #334155; /* Azul pizarra */
+    padding: 15px;
+    border-radius: 8px;
+    border-top: 4px solid #38bdf8; /* Detalle azul celeste brillante */
+}
+
+.card-top h3 {
+    font-size: 1.1rem;
+    color: #38bdf8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-top p, .card-top ul {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+}
+
+.card-top ul {
+    list-style: none;
+}
+
+.card-top ul li {
+    margin-bottom: 4px;
+}
+
+/* 2. MENÚ DE NAVEGACIÓN PRINCIPAL (LOS 5 APARTADOS) */
+nav.menu-pasatiempos {
+    background-color: #0f172a; /* Azul casi negro */
+    border-bottom: 3px solid #0284c7;
+}
+
+nav.menu-pasatiempos ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav.menu-pasatiempos ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav.menu-pasatiempos ul li a {
+    display: block;
+    padding: 16px 10px;
+    color: #94a3b8; /* Azul grisáceo claro */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por los apartados */
+nav.menu-pasatiempos ul li a:hover,
+nav.menu-pasatiempos ul li a.activo {
+    background-color: #0284c7; /* Azul vivo */
+    color: #ffffff;
+}
+
+/* 3. CONTENIDO PRINCIPAL */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+main h2 {
+    color: #0369a1;
+    border-bottom: 2px solid #bae6fd;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+main p {
+    color: #475569;
+}
+
+/* 4. PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f172a;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-top: 40px;
+}
+/* AJUSTE DE TAMAÑO Y MÁRGENES DE LAS FOTOS */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre cada tarjeta */
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.tarjeta-imagen {
+    flex: 1;
+    max-width: 200px; /* Ancho máximo para que las tarjetas no sean gigantes */
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px; /* Margen interno alrededor de la foto */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 120px; /* Reduce la altura de la foto */
+    object-fit: cover; /* Mantiene la foto bien recortada sin deformar */
+    border-radius: 5px;
+}
+
+.tarjeta-imagen p {
+    font-size: 0.8rem;
+    color: #334155;
+    margin-top: 6px;
+    font-weight: 600;
+}
